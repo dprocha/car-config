@@ -1,0 +1,15 @@
+car:
+  security:
+    enable: false
+  swagger:
+    title: "REST Car API Documentation on Cloud Foundry"
+spring:
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      max-lifetime: 20000
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+  liquibase:
+    contexts: local
+    drop-first: true
